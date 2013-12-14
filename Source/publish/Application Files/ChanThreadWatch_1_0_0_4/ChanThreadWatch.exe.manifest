@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="ChanThreadWatch.exe" version="1.0.0.4" publicKeyToken="b88cfecc802b6358" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="ChanThreadWatch.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ChanThreadWatch" version="1.7.0.4" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ChanThreadWatch.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ChanThreadWatch.exe" size="228352">
+      <assemblyIdentity name="ChanThreadWatch" version="1.7.0.4" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>7a8uVFnOMWbENSiltkf3IjL2SJU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ChanThreadWatch.exe.config" size="225">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ZP/wk2jhRJhJ+SON2heK6biMeBA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ChanThreadWatch.ico" size="40204">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>/H7hLdlbIcbrYzpVSsbgTnwol4Q=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=James-PC\new" issuerKeyHash="42e1637617ca5141bc752559123a151272fef0e0" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>Yn9kMDeG21UDaIvr8emMFkmOzJY=</DigestValue></Reference></SignedInfo><SignatureValue>L4oe6JGt5ih3V5vGcb0CDEjRGVIyy3gYNZvWD9xoqog5RH4WT8GEf7qKt7Kg5bJ673YfM8yVU4C9PhnWX4Gymw8Xa9sfya60Y1wj43HwLJsSf6fBXGlENyAv5GHlxGXluyrSL2RO2rr5mo2auLwAqHh7/flzoglhRwH1/86EP74=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>kUZKT00c66Fi+pu2GPxSY6aGTeni6n/qcaX3nWuCKbu0kyTgAHCRGoUdZsPB57OF53P7/S/qpA/eEoowXfUz33AovyD7zaOCzV419ajeBhUAKl4vXkZjm1MokzQyiux/j5S5EWzS2gS4bjhdA7Sy0ZdOmrVkxfyPIWs/qxmg0F8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="96cc8e49168ce9f1eb8b680355db863730647f62" Description="" Url=""><as:assemblyIdentity name="ChanThreadWatch.exe" version="1.0.0.4" publicKeyToken="b88cfecc802b6358" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=James-PC\new</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>4bvXWPY1+SBliPltxuMXrhT1w8E=</DigestValue></Reference></SignedInfo><SignatureValue>FR2FXMiD3x0qjrV/LW+oiUu/Drf9Zx6xjgT/hSwTCAY9RyXr7IszNLPLYXIuK6zr2iYV/dJQViI02VrZqpfKByZCNfCVua50NluptDYcEPYRFkvTZc6sCeLNsEezDKySGyiHdC3hNImxRBF5o/2U+bkA07uXm7umFUfyTK/pALo=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>kUZKT00c66Fi+pu2GPxSY6aGTeni6n/qcaX3nWuCKbu0kyTgAHCRGoUdZsPB57OF53P7/S/qpA/eEoowXfUz33AovyD7zaOCzV419ajeBhUAKl4vXkZjm1MokzQyiux/j5S5EWzS2gS4bjhdA7Sy0ZdOmrVkxfyPIWs/qxmg0F8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIByTCCATKgAwIBAgIQTHk7iBOTIrJJFeGxVd85PDANBgkqhkiG9w0BAQUFADAjMSEwHwYDVQQDHhgASgBhAG0AZQBzAC0AUABDAFwAbgBlAHcwHhcNMTIxMjIwMDExODM2WhcNMTMxMjIwMDcxODM2WjAjMSEwHwYDVQQDHhgASgBhAG0AZQBzAC0AUABDAFwAbgBlAHcwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAJFGSk9NHOuhYvqbthj8UmOmhk3p4up/6nGl951rgim7tJMk4ABwkRqFHWbDweezhedz+/0v6qQP3hKKMF31M99wKL8g+82jgs1eNfWo3gYVACpeL15GY5tTKJM0Morsf4+UuRFs0toEuG44XQO0stGXTpq1ZMX8jyFrP6sZoNBfAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAFUmjYsqsYwTSrPP6Hwy0W/N+73ee/bGHakURn0OyZYpUSuz1wtXeRKWPCEZNZv7NN/je69DWfEiPc+6m1pzYcP8+Jw1FiR0Vq+WxX8xVqpvcwAmxM9UGVHQHTz2CMd5RjVm+rYhVo24c6myedPauSCLQGsUfhNjRtsRU5XcGyOE=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
