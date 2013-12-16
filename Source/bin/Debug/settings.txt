@@ -12,5 +12,5 @@ PageAuth=
 UseImageAuth=0
 ImageAuth=
 OneTimeDownload=0
-CheckEvery=3
+CheckEvery=1440
 OnThreadDoubleClick=1
