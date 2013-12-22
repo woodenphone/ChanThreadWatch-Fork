@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ChanThreadWatch.exe" size="228352">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ChanThreadWatch.exe" size="226304">
       <assemblyIdentity name="ChanThreadWatch" version="1.7.0.4" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>4okwQikAWnUYjMEFt6R72z0vkAA=</dsig:DigestValue>
+        <dsig:DigestValue>bonA36ZuF3NDCmGlhHYw15hqmog=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

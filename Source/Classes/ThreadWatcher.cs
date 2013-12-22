@@ -348,7 +348,7 @@ namespace JDP {
 				int pageIndex = 0;
 				OnDownloadStatus(new DownloadStatusEventArgs(DownloadType.Page, 0, _pageList.Count));
 				while (pageIndex < _pageList.Count && !IsStopping) {
-					string saveFileName = General.CleanFileName(_threadName) + ((pageIndex == 0) ? String.Empty : ("_" + (pageIndex + 1))) + (DateTime.Now.ToString("_yyyy-M-d HH.mm.ss_")) + ".html";
+					string saveFileName = General.CleanFileName(_threadName) + ((pageIndex == 0) ? String.Empty : ("_" + (pageIndex + 1))) + (DateTime.Now.ToString("_yyyy-M-d HH.mm.ss_")) + ".html";// Put datestamp in filename
 					HTMLParser pageParser = null;
 
 					PageInfo pageInfo = _pageList[pageIndex];
