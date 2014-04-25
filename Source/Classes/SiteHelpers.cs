@@ -152,8 +152,9 @@ namespace JDP {
 		}
 	}
 
-    // //Commented out to fix problem saving images
+    
     public class SiteHelper_4chan_org : SiteHelper {
+    // //Commented out to fix problem saving images
     //    public override List<ImageInfo> GetImages(List<ReplaceInfo> replaceList, List<ThumbnailInfo> thumbnailList) {
     //        List<ImageInfo> imageList = new List<ImageInfo>();
     //        bool seenSpoiler = false;
@@ -263,6 +264,7 @@ namespace JDP {
         public override bool IsBoardHighTurnover() {
             return String.Equals(GetBoardName(), "b", StringComparison.OrdinalIgnoreCase);
         }
+        // Override for new 4chan namespaces
         protected override string ImageURLKeyword
         {
             get { return "i.4cdn.org"; }
