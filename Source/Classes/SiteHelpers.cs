@@ -153,7 +153,7 @@ namespace JDP {
 	}
 
     // //Commented out to fix problem saving images
-    //public class SiteHelper_4chan_org : SiteHelper {
+    public class SiteHelper_4chan_org : SiteHelper {
     //    public override List<ImageInfo> GetImages(List<ReplaceInfo> replaceList, List<ThumbnailInfo> thumbnailList) {
     //        List<ImageInfo> imageList = new List<ImageInfo>();
     //        bool seenSpoiler = false;
@@ -260,10 +260,14 @@ namespace JDP {
     //        return imageList;
     //    }
 
-    //    public override bool IsBoardHighTurnover() {
-    //        return String.Equals(GetBoardName(), "b", StringComparison.OrdinalIgnoreCase);
-    //    }
-    //}
+        public override bool IsBoardHighTurnover() {
+            return String.Equals(GetBoardName(), "b", StringComparison.OrdinalIgnoreCase);
+        }
+        protected override string ImageURLKeyword
+        {
+            get { return "i.4cdn.org"; }
+        }
+    }
 
 	public class SiteHelper_krautchan_net : SiteHelper {
 		public override string GetThreadName() {
