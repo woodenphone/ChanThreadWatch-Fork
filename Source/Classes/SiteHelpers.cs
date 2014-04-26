@@ -264,12 +264,56 @@ namespace JDP {
         public override bool IsBoardHighTurnover() {
             return String.Equals(GetBoardName(), "b", StringComparison.OrdinalIgnoreCase);
         }
+
+
         // Override for new 4chan namespaces
         protected override string ImageURLKeyword
         {
             get { return "i.4cdn.org"; }
         }
+
+
+        // Override to convert new thread url format into something that will give the old style output
+        public override string GetThreadName()
+        {
+            
+            
+            string[] urlSplit = SplitURL();
+            if (_url.ToLower().Contains("/thread/".ToLower()))
+            {
+                // New style thread namespace
+                // “http(s)://boards.4chan.org/g/thread/41321419/daily-programming-thread”
+                if (urlSplit.Length >= 3)
+                {
+                    string page = urlSplit[3];
+                    int pos = page.IndexOf('?');
+                    if (pos != -1) page = page.Substring(0, pos);
+                    pos = page.LastIndexOf('.');
+                    if (pos != -1) page = page.Substring(0, pos);
+                    return page;
+                }
+                return String.Empty;
+            }
+            else
+            {
+                // For old style links
+                // “http(s)://boards.4chan.org/g/res/41321419”
+                if (urlSplit.Length >= 3)
+                {
+                    string page = urlSplit[urlSplit.Length - 1];
+                    int pos = page.IndexOf('?');
+                    if (pos != -1) page = page.Substring(0, pos);
+                    pos = page.LastIndexOf('.');
+                    if (pos != -1) page = page.Substring(0, pos);
+                    return page;
+                }
+                return String.Empty;
+            }
+        }
+
+
     }
+
 
 	public class SiteHelper_krautchan_net : SiteHelper {
 		public override string GetThreadName() {
