@@ -1,0 +1,43 @@
+
+# Example contents with one thread
+3
+https://boards.4chan.org/mlp/thread/18454072
+
+
+180
+1
+4chan_mlp_18454072
+
+4chan_mlp_18454072
+635397237556714322
+635397237582725810
+
+# /Example contents with one thread
+# What each line does
+3# File version
+https://boards.4chan.org/mlp/thread/18454072#pageURL
+#pageAuth
+#imageAuth
+180#checkIntervalSeconds
+1#oneTimeDownload
+4chan_mlp_18454072#saveDir
+#stopReasonLine
+4chan_mlp_18454072#description
+635397237556714322#AddedOn
+635397237582725810#lastImageOn
+
+# /What each line does
+# after completion 
+3
+https://boards.4chan.org/mlp/thread/18454072
+
+
+180
+1
+4chan_mlp_18454072
+4# done
+4chan_mlp_18454072
+635397237556714322
+635397237582725810
+
+#
