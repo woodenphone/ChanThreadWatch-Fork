@@ -600,7 +600,8 @@ namespace JDP {
 					}
 				}
 
-				if (OneTimeDownload) {
+                if (OneTimeDownload | siteHelper.ForceOneTimeDownload())
+                {
 					Stop(StopReason.DownloadComplete);
 				}
 			}
