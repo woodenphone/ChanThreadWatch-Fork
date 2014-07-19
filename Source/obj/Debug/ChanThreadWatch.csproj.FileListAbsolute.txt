@@ -83,3 +83,4 @@ F:\Programming\C Sharp\Projects\ChanThreadWatch Fork\Source\obj\Debug\ChanThread
 F:\Programming\C Sharp\Projects\ChanThreadWatch Fork\Source\obj\Debug\ChanThreadWatch.exe.manifest
 F:\Programming\C Sharp\Projects\ChanThreadWatch Fork\Source\obj\Debug\ChanThreadWatch.application
 F:\Programming\C Sharp\Projects\ChanThreadWatch Fork\Source\obj\Debug\ChanThreadWatch.csproj.GenerateResource.Cache
+F:\Programming\C Sharp\Projects\ChanThreadWatch Fork\Source\obj\Debug\ChanThreadWatch.csprojResolveAssemblyReference.cache

@@ -328,10 +328,13 @@ namespace JDP {
 			get { return "/files/"; }
 		}
 	}
-    public class SiteHelper_heinessen_net : SiteHelper
+    public class SiteHelper_archive_heinessen_com : SiteHelper
     // For the http://archive.heinessen.com/ archive.
     // TODO: Make it work for html AND images, make only one-time download option available for archive. 
     {
-
+        protected override string ImageURLKeyword
+        {
+            get { return "/img/"; }
+        }
     }
 }
