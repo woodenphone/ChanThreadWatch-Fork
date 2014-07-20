@@ -24,7 +24,7 @@ http://archive.rebeccablacktech.com/
 ````
 
 Old code by JDP
-[http://sites.google.com/site/chanthreadwatch/]
+http://sites.google.com/site/chanthreadwatch/
 
 New code by Anon
-[https://github.com/woodenphone/]
+https://github.com/woodenphone/
