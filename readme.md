@@ -1,9 +1,9 @@
 # ChanThreadWatch Fork
-Updates, previous versions, etc. are available at
+Updates, previous versions, etc. are available at the GitHub page
 https://github.com/woodenphone/ChanThreadWatch-Fork
 
 Executables are available at the GitHub releases page.
-[https://github.com/woodenphone/ChanThreadWatch-Fork/releases]
+https://github.com/woodenphone/ChanThreadWatch-Fork/releases
 
 This fork was created to add more features and fix broken ones.
 
