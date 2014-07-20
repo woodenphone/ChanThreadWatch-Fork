@@ -390,4 +390,61 @@ namespace JDP {
             return true;
         }
     }
+
+    public class SiteHelper_warosu_org : SiteHelper
+    // For the https://warosu.org archive.
+    // TODO: limit to one file download at a time.
+    {
+        protected override string ImageURLKeyword
+        // Get images to work for this archive
+        // Example image URL
+        // <a href="//warosu.org/data/tg/img/0335/30/1405840504215.gif">   <img class="thumb" src="//warosu.org/data/tg/thumb/0335/30/1405840504215s.jpg" alt="33530951" width="125" height="87">   </a>
+        {
+            get { return "/img/"; }
+        }
+
+        public override bool ForceOneTimeDownload()
+        // Prevent from rechecking automatically.
+        {
+            return true;
+        }
+    }
+
+    public class SiteHelper_suptg_thisisnotatrueending_com : SiteHelper
+    // For the http://suptg.thisisnotatrueending.com/ archive.
+    // TODO: limit to one file download at a time.
+    {
+        protected override string ImageURLKeyword
+        // Get images to work for this archive
+        // Example image URL
+        // <a class="fileThumb" href="images/1405829646133.gif" target="_blank"><img src="thumbs/1405829646133s.jpg" alt="169 KB" data-md5="UNDNDl++AVmkMe1tCGHqCA==" style="height: 117px; width: 125px;"><div class="mFileInfo mobile">169 KB GIF</div></a>
+        {
+            get { return "/images/"; }
+        }
+
+        public override bool ForceOneTimeDownload()
+        // Prevent from rechecking automatically.
+        {
+            return true;
+        }
+    }
+
+    public class SiteHelper_archive_rebeccablacktech_com : SiteHelper
+    // For the http://archive.rebeccablacktech.com/ archive.
+    // TODO: limit to one file download at a time.
+    {
+        protected override string ImageURLKeyword
+        // Get images to work for this archive
+        // Example image URL
+        // <a href="/boards/g/img/0431/06/1405848977018.jpg">  <img class="thumb" src="/boards/g/thumb/0431/06/1405848977018s.jpg" alt="43106313" width="125" height="70"> </a>
+        {
+            get { return "/img/"; }
+        }
+
+        public override bool ForceOneTimeDownload()
+        // Prevent from rechecking automatically.
+        {
+            return true;
+        }
+    }
 }

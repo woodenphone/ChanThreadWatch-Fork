@@ -15,8 +15,9 @@ Supported archives:
 http://archive.heinessen.com/
 http://archive.foolz.us/
 http://archive.4plebs.org/
-
-
+https://warosu.org
+http://suptg.thisisnotatrueending.com/
+http://archive.rebeccablacktech.com/
 
 
 Old code by JDP
