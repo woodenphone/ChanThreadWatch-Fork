@@ -150,6 +150,12 @@ namespace JDP {
 		public virtual string GetNextPageURL() {
 			return null;
 		}
+
+        public virtual bool ForceOneTimeDownload()
+        // Setting to prevent from rechecking automatically.
+        {
+            return false;
+        }
 	}
 
     
@@ -328,4 +334,117 @@ namespace JDP {
 			get { return "/files/"; }
 		}
 	}
+    public class SiteHelper_archive_heinessen_com : SiteHelper
+    // For the http://archive.heinessen.com/ archive.
+    // TODO: limit to one file download at a time.
+    {
+        protected override string ImageURLKeyword
+        // Get images to work for this archive
+        // Example image URL
+        // <a href="/boards/mlp/img/0187/97/1405734311702.png">  <img class="thumb" src="/boards/mlp/thumb/0187/97/1405734311702s.jpg" alt="18797271" width="125" height="70"> </a>
+        {
+            get { return "/img/"; }
+        }
+
+        public override bool ForceOneTimeDownload()
+        // Prevent from rechecking automatically.
+        {
+            return true;
+        }
+    }
+
+    public class SiteHelper_archive_foolz_us : SiteHelper
+    // For the http://archive.foolz.us/ archive.
+    // TODO: limit to one file download at a time.
+    {
+        protected override string ImageURLKeyword
+        // Get images to work for this archive
+        // Example image URL
+        // <a href="http://1-media-cdn.foolz.us/ffuuka/board/tg/image/1400/99/1400992506959.jpg" target="_blank" rel="noreferrer" class="thread_image_link"> <img src="http://1-media-cdn.foolz.us/ffuuka/board/tg/thumb/1400/99/1400992506959s.jpg" width="125" height="88" class="lazyload post_image" data-md5="GyWwXlbqohSt6KmLtGb8uw=="> </a>
+        {
+            get { return "/image/"; }
+        }
+
+        public override bool ForceOneTimeDownload()
+        // Prevent from rechecking automatically.
+        {
+            return true;
+        }
+    }
+
+    public class SiteHelper_archive_4plebs_org : SiteHelper
+    // For the http://archive.4plebs.org/ archive.
+    // TODO: limit to one file download at a time.
+    {
+        protected override string ImageURLKeyword
+        // Get images to work for this archive
+        // Example image URL
+        // <a href="http://img.4plebs.org/boards/tg/image/1405/73/1405731101946.jpg" target="_blank" rel="noreferrer" class="thread_image_link"> <img src="http://img.4plebs.org/boards/tg/thumb/1405/73/1405731101946s.jpg" width="125" height="62" class="lazyload post_image" data-md5="23m6xQqIO1aTdoENnURyXQ=="> </a>
+        {
+            get { return "/image/"; }
+        }
+
+        public override bool ForceOneTimeDownload()
+        // Prevent from rechecking automatically.
+        {
+            return true;
+        }
+    }
+
+    public class SiteHelper_warosu_org : SiteHelper
+    // For the https://warosu.org archive.
+    // TODO: limit to one file download at a time.
+    {
+        protected override string ImageURLKeyword
+        // Get images to work for this archive
+        // Example image URL
+        // <a href="//warosu.org/data/tg/img/0335/30/1405840504215.gif">   <img class="thumb" src="//warosu.org/data/tg/thumb/0335/30/1405840504215s.jpg" alt="33530951" width="125" height="87">   </a>
+        {
+            get { return "/img/"; }
+        }
+
+        public override bool ForceOneTimeDownload()
+        // Prevent from rechecking automatically.
+        {
+            return true;
+        }
+    }
+
+    public class SiteHelper_suptg_thisisnotatrueending_com : SiteHelper
+    // For the http://suptg.thisisnotatrueending.com/ archive.
+    // TODO: limit to one file download at a time.
+    {
+        protected override string ImageURLKeyword
+        // Get images to work for this archive
+        // Example image URL
+        // <a class="fileThumb" href="images/1405829646133.gif" target="_blank"><img src="thumbs/1405829646133s.jpg" alt="169 KB" data-md5="UNDNDl++AVmkMe1tCGHqCA==" style="height: 117px; width: 125px;"><div class="mFileInfo mobile">169 KB GIF</div></a>
+        {
+            get { return "/images/"; }
+        }
+
+        public override bool ForceOneTimeDownload()
+        // Prevent from rechecking automatically.
+        {
+            return true;
+        }
+    }
+
+    public class SiteHelper_archive_rebeccablacktech_com : SiteHelper
+    // For the http://archive.rebeccablacktech.com/ archive.
+    // TODO: limit to one file download at a time.
+    {
+        protected override string ImageURLKeyword
+        // Get images to work for this archive
+        // Example image URL
+        // <a href="/boards/g/img/0431/06/1405848977018.jpg">  <img class="thumb" src="/boards/g/thumb/0431/06/1405848977018s.jpg" alt="43106313" width="125" height="70"> </a>
+        {
+            get { return "/img/"; }
+        }
+
+        public override bool ForceOneTimeDownload()
+        // Prevent from rechecking automatically.
+        {
+            return true;
+        }
+    }
 }
