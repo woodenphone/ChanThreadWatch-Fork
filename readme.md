@@ -1,4 +1,7 @@
 # ChanThreadWatch Fork
+This is a program for saving threads from 4chan and other similar sites.
+Each different version of a thread the program sees is saved with a timestamp to allow retention of deleted posts.
+
 Updates, previous versions, etc. are available at the GitHub page
 https://github.com/woodenphone/ChanThreadWatch-Fork
 
@@ -17,8 +20,9 @@ Supported archives:
 ````
 http://archive.heinessen.com/
 http://archive.foolz.us/
+https://nsfw.foolz.us/
 http://archive.4plebs.org/
-https://warosu.org
+https://warosu.org/
 http://suptg.thisisnotatrueending.com/
 http://archive.rebeccablacktech.com/
 ````

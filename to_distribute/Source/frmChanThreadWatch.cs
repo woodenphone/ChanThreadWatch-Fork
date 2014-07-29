@@ -964,5 +964,10 @@ namespace JDP {
 			LastImageOn = 2,
 			AddedOn = 3
 		}
+
+        private void frmChanThreadWatch_Load(object sender, EventArgs e)
+        {
+
+        }
 	}
 }

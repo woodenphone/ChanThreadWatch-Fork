@@ -430,8 +430,9 @@
             this.Name = "frmChanThreadWatch";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Chan Thread Watch Saves every request";
+            this.Text = "Chan Thread Watch Fork";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmChanThreadWatch_FormClosed);
+            this.Load += new System.EventHandler(this.frmChanThreadWatch_Load);
             this.Shown += new System.EventHandler(this.frmChanThreadWatch_Shown);
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.frmChanThreadWatch_DragDrop);
             this.DragEnter += new System.Windows.Forms.DragEventHandler(this.frmChanThreadWatch_DragEnter);

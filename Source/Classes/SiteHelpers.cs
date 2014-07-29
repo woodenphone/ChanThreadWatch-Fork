@@ -372,6 +372,25 @@ namespace JDP {
         }
     }
 
+    public class SiteHelper_nsfw_foolz_us : SiteHelper
+    // For the https://nsfw.foolz.us archive.
+    // TODO: limit to one file download at a time.
+    {
+        protected override string ImageURLKeyword
+        // Get images to work for this archive
+        // Example image URL
+        // <a href="https://0-media-cdn.foolz.us/ffuuka/board/u/image/1356/72/1356725816134.gif" target="_blank" rel="noreferrer" class="thread_image_link"> <img src="https://0-media-cdn.foolz.us/ffuuka/board/u/thumb/1356/72/1356725816134s.jpg" width="125" height="87" class="lazyload post_image" data-md5="Qpw5fRUsujil+nx6yu6n1A=="> </a>
+        {
+            get { return "/image/"; }
+        }
+
+        public override bool ForceOneTimeDownload()
+        // Prevent from rechecking automatically.
+        {
+            return true;
+        }
+    }
+
     public class SiteHelper_archive_4plebs_org : SiteHelper
     // For the http://archive.4plebs.org/ archive.
     // TODO: limit to one file download at a time.
