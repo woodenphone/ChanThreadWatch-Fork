@@ -15,6 +15,12 @@ If you find this helpful and know enough C#, feel free to fork this and make it 
 It's basically what I'm doing.
 
 
+Chans that I've tested:
+````
+http://4chan.org
+````
+Others should work, if one doesn't, let me know.
+
 Downloads for known archives are automatically set to only run once in their sitehelper class.
 Supported archives:
 ````
@@ -25,6 +31,7 @@ http://archive.4plebs.org/
 https://warosu.org/
 http://suptg.thisisnotatrueending.com/
 http://archive.rebeccablacktech.com/
+https://archive.moe/
 ````
 
 Old code by JDP

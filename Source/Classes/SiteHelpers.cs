@@ -466,4 +466,23 @@ namespace JDP {
             return true;
         }
     }
+
+    public class SiteHelper_archive_moe : SiteHelper
+    // For the https://archive.moe/ archive.
+    // TODO: limit to one file download at a time.
+    {
+        protected override string ImageURLKeyword
+        // Get images to work for this archive
+        // Example image URL
+        // NONE AVAILABLE, uses 4chan link. https://i.4cdn.org/mlp/1408407270435.jpg
+        {
+            get { return "i.4cdn.org/"; }
+        }
+
+        public override bool ForceOneTimeDownload()
+        // Prevent from rechecking automatically.
+        {
+            return true;
+        }
+    }
 }
