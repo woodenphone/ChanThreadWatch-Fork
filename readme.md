@@ -31,7 +31,11 @@ http://archive.4plebs.org/
 https://warosu.org/
 http://suptg.thisisnotatrueending.com/
 http://archive.rebeccablacktech.com/
-https://archive.moe/
+https://archive.moe/ - Image downloads are buggy
+http://nsfw.archive.moe/
+http://fgts.jp/
+http://archive.loveisover.me/
+http://archive.nyafuu.org/
 ````
 
 Old code by JDP
