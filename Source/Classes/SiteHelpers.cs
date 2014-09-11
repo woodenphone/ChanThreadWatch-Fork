@@ -357,6 +357,20 @@ namespace JDP {
     }
 
 
+    public class SiteHelper_u18chan_com : SiteHelper
+    // For https://u18chan.com
+    {
+        protected override string ImageURLKeyword
+        /* Get images to work for this archive
+         * Example image URL
+         * <a href="https://u18chan.com/uploads/data/13325/13_dragon.swf"><u>13_dragon.swf</u></a>
+         */
+        {
+            get { return "/uploads/data/"; }
+        }
+    }
+
+
     /*
      * Archive helpers
      * A list of archives used by 4chan-x is available at https://github.com/MayhemYDG/4chan-x/blob/v3/json/archives.json
