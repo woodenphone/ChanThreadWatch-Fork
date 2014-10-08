@@ -640,9 +640,13 @@ namespace JDP {
 				new ListItemInt32(3, "3"),
 				new ListItemInt32(5, "5"),
 				new ListItemInt32(10, "10"),
+                new ListItemInt32(15, "15"),
+                new ListItemInt32(20, "20"),
                 new ListItemInt32(30, "30"),
 				new ListItemInt32(60, "60"),
+                new ListItemInt32(90, "90"),//60 + 30
                 new ListItemInt32(120, "2 Hours"),//60 * 2
+                new ListItemInt32(360, "6 Hours"),//60 * 6
                 new ListItemInt32(720, "12 Hours"),//60 * 12
                 new ListItemInt32(1440, "24 Hours"),//60 * 24
 			};
