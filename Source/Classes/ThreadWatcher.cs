@@ -308,12 +308,13 @@ namespace JDP {
 							_maxFileNameLength = 0;
 							_threadName = siteHelper.GetThreadName();
 
-							if (String.IsNullOrEmpty(_threadDownloadDirectory)) {
-								_threadDownloadDirectory = Path.Combine(_mainDownloadDirectory, General.CleanFileName(String.Format(
-									"{0}_{1}_{2}", siteHelper.GetSiteName(), siteHelper.GetBoardName(), _threadName)));
-								if (!Directory.Exists(_threadDownloadDirectory)) {
-									Directory.CreateDirectory(_threadDownloadDirectory);
-								}
+                            if (String.IsNullOrEmpty(_threadDownloadDirectory))
+                            {
+                                _threadDownloadDirectory = Path.Combine(_mainDownloadDirectory, General.CleanFileName(String.Format(
+                                    "{0}_{1}_{2}", siteHelper.GetSiteName(), siteHelper.GetBoardName(), _threadName)));
+                            }
+							if (!Directory.Exists(_threadDownloadDirectory)) {
+								Directory.CreateDirectory(_threadDownloadDirectory);
 							}
 							if (String.IsNullOrEmpty(_description)) {
 								_description = General.GetLastDirectory(_threadDownloadDirectory);

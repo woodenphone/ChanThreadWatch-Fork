@@ -8,10 +8,11 @@ F:\Programming\C Sharp\Projects\ChanThreadWatch Fork\Source\obj\Release\JDP.frmD
 F:\Programming\C Sharp\Projects\ChanThreadWatch Fork\Source\obj\Release\JDP.frmSettings.resources
 F:\Programming\C Sharp\Projects\ChanThreadWatch Fork\Source\obj\Release\JDP.frmThreadDescription.resources
 F:\Programming\C Sharp\Projects\ChanThreadWatch Fork\Source\obj\Release\JDP.Properties.Resources.resources
-F:\Programming\C Sharp\Projects\ChanThreadWatch Fork\Source\obj\Release\ChanThreadWatch.csproj.GenerateResource.Cache
 F:\Programming\C Sharp\Projects\ChanThreadWatch Fork\Source\obj\Release\ChanThreadWatch.TrustInfo.xml
 F:\Programming\C Sharp\Projects\ChanThreadWatch Fork\Source\obj\Release\ChanThreadWatch.exe.manifest
 F:\Programming\C Sharp\Projects\ChanThreadWatch Fork\Source\obj\Release\ChanThreadWatch.application
 F:\Programming\C Sharp\Projects\ChanThreadWatch Fork\Source\obj\Release\ChanThreadWatch.exe
 F:\Programming\C Sharp\Projects\ChanThreadWatch Fork\Source\obj\Release\ChanThreadWatch.pdb
-F:\Programming\C Sharp\Projects\ChanThreadWatch Fork\Source\obj\Release\ChanThreadWatch.csprojResolveAssemblyReference.cache
+F:\Programming\C Sharp\Projects\ChanThreadWatch Fork\Source\obj\Release\ResolveAssemblyReference.cache
+F:\Programming\C Sharp\Projects\ChanThreadWatch Fork\Source\obj\Release\ResGen.read.1.tlog
+F:\Programming\C Sharp\Projects\ChanThreadWatch Fork\Source\obj\Release\ResGen.write.1.tlog
