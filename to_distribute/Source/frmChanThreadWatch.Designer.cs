@@ -416,9 +416,10 @@
             // 
             // threadCountLabel
             // 
+            this.threadCountLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.threadCountLabel.AutoSize = true;
             this.threadCountLabel.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.threadCountLabel.Location = new System.Drawing.Point(384, 303);
+            this.threadCountLabel.Location = new System.Drawing.Point(412, 326);
             this.threadCountLabel.Name = "threadCountLabel";
             this.threadCountLabel.Size = new System.Drawing.Size(212, 13);
             this.threadCountLabel.TabIndex = 9;
