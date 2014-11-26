@@ -63,6 +63,7 @@
             this.tmrSaveThreadList = new System.Windows.Forms.Timer(this.components);
             this.btnDownloads = new System.Windows.Forms.Button();
             this.tmrMaintenance = new System.Windows.Forms.Timer(this.components);
+            this.threadCountLabel = new System.Windows.Forms.Label();
             this.grpAddThread.SuspendLayout();
             this.grpDoubleClick.SuspendLayout();
             this.SuspendLayout();
@@ -70,9 +71,9 @@
             // lvThreads
             // 
             this.lvThreads.AllowColumnReorder = true;
-            this.lvThreads.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lvThreads.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.lvThreads.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.chDescription,
             this.chStatus,
@@ -413,11 +414,23 @@
             this.tmrMaintenance.Interval = 1000;
             this.tmrMaintenance.Tick += new System.EventHandler(this.tmrMaintenance_Tick);
             // 
+            // threadCountLabel
+            // 
+            this.threadCountLabel.AutoSize = true;
+            this.threadCountLabel.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.threadCountLabel.Location = new System.Drawing.Point(384, 303);
+            this.threadCountLabel.Name = "threadCountLabel";
+            this.threadCountLabel.Size = new System.Drawing.Size(212, 13);
+            this.threadCountLabel.TabIndex = 9;
+            this.threadCountLabel.Text = "Total threads in watch list: Not yet counted.";
+            this.threadCountLabel.Click += new System.EventHandler(this.threadCountLabel_Click);
+            // 
             // frmChanThreadWatch
             // 
             this.AllowDrop = true;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(636, 373);
+            this.Controls.Add(this.threadCountLabel);
             this.Controls.Add(this.btnDownloads);
             this.Controls.Add(this.btnAddFromClipboard);
             this.Controls.Add(this.grpDoubleClick);
@@ -440,6 +453,7 @@
             this.grpAddThread.PerformLayout();
             this.grpDoubleClick.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 
@@ -484,6 +498,7 @@
 		private System.Windows.Forms.Timer tmrSaveThreadList;
 		private System.Windows.Forms.Button btnDownloads;
 		private System.Windows.Forms.Timer tmrMaintenance;
+        private System.Windows.Forms.Label threadCountLabel;
 	}
 }
 

@@ -431,6 +431,7 @@ namespace JDP {
 			if (_saveThreadList && !_isExiting) {
 				SaveThreadList();
 				_saveThreadList = false;
+                UpdateThreadCounter();// Update thread counter each time the threads list is saved to disk
 			}
 		}
 
@@ -606,6 +607,7 @@ namespace JDP {
 				watcher.Stop(stopReason.Value);
 			}
 
+            UpdateThreadCounter(); // Update counter each time a thread is added
 			return true;
 		}
 
@@ -629,6 +631,7 @@ namespace JDP {
 				}
 			}
 			_saveThreadList = true;
+            UpdateThreadCounter();// Update thread counter each time a thread is removed.
 		}
 
 		private void BindCheckEveryList() {
@@ -803,6 +806,20 @@ namespace JDP {
 			DisplayStatus(watcher, status);
 		}
 
+        public void UpdateThreadCounter(){
+            // Update the thread counter text
+            int threadCount = 0;
+            // Count the threads in the list
+            foreach (ThreadWatcher watcher in ThreadWatchers) {
+                threadCount += 1;
+				}
+            // Generate the new text
+            string counterText = String.Concat("Total threads in watch list: ", threadCount.ToString(), "");
+            // Set the text to be displayed
+            threadCountLabel.Text = counterText;
+            return;
+        }
+
 		private void SaveThreadList() {
 			try {
 				// Prepare lines before writing file so that an exception can't result
@@ -877,6 +894,7 @@ namespace JDP {
 				}
 			}
 			catch { }
+            UpdateThreadCounter();// Update thread counter each time the threads list is loaded
 		}
 
 		private void CheckForUpdates() {
@@ -972,6 +990,11 @@ namespace JDP {
         private void frmChanThreadWatch_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void threadCountLabel_Click(object sender, EventArgs e)
+        {
+            UpdateThreadCounter();// Update thread counter each time the counter is clicked
         }
 	}
 }
